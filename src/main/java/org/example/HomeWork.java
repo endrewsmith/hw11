@@ -42,10 +42,11 @@ public class HomeWork {
                     result.add(tree.uniq());
                 }
         );
-
+        // В одной idea на одном ПК требовал \r, на другом нет,
+        // оставил, но если не проходит тест, то можно убрать, тогда пройдет
         out.write(result.stream()
                 .map(String::valueOf)
-                .collect(Collectors.joining("\n"))
+                .collect(Collectors.joining("\r\n"))
                 .getBytes());
     }
 }

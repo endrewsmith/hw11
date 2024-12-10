@@ -1,4 +1,4 @@
-package org.example.hm11;
+package org.example;
 
 
 import java.io.PrintStream;
